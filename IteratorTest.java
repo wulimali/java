@@ -20,12 +20,14 @@ public class IteratorTest {
 		Map<String, String> map = SqlIinit.hKeyValue;
 
 		Iterator<Entry<String, String>> map_data = map.entrySet().iterator();
+		PrintStream out = System.out;
 		PrintStream ps = null;
 		try {
 			FileOutputStream fos = new FileOutputStream(
-					"/Users/lefei/Documents/java/work_space/Learning/src/testIterator/sql.txt", true);
+					"D:/Java Project/Java_src/src/testIterator/sql.txt", true);
 			ps = new PrintStream(fos);
 		} catch (IOException e) {
+			e.getStackTrace();
 			e.printStackTrace();
 		}
 		if (ps != null) {
@@ -51,8 +53,8 @@ public class IteratorTest {
 		
 		ps.flush();
 		ps.close();
-		System.setOut(null);
-		System.out.println("AAAAAA");
+		System.setOut(out);
+		System.out.println("The programme ended normally!");
 	}
 
 }

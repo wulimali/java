@@ -18,7 +18,7 @@ public class SqlIinit {
 		try {
 			BufferedReader br = new BufferedReader(
 					new FileReader(
-							"/Users/lefei/Documents/java/work_space/Learning/src/testIterator/Sql.properties"));
+							"D:/Java Project/Java_src/src/testIterator/Sql.properties"));
 			pr = new Properties();
 			pr.load(br);
 			br.close();

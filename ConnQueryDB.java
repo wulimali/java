@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class ConnQueryDB {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://192.168.99.100:3307/test_docker?"
+	static final String DB_URL = "jdbc:mysql://localhost:3306/mydbforjava?"
 			+ "useUnicode=true&characterEncoding=UTF-8&useSSL=false";
 
 	static final String USER = "root";
