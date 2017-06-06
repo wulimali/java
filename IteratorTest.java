@@ -20,6 +20,7 @@ public class IteratorTest {
 		Map<String, String> map = SqlIinit.hKeyValue;
 
 		Iterator<Entry<String, String>> map_data = map.entrySet().iterator();
+		PrintStream out = System.out;
 		PrintStream ps = null;
 		try {
 			FileOutputStream fos = new FileOutputStream(
@@ -51,8 +52,8 @@ public class IteratorTest {
 		
 		ps.flush();
 		ps.close();
-		System.setOut(null);
-		System.out.println("AAAAAA");
+		System.setOut(out);
+		System.out.println("The programme ended normally!");
 	}
 
 }
